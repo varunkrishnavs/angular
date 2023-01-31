@@ -1,0 +1,31 @@
+<p>view-all works!</p>
+<div class="container">
+ <table class="table table-dark table-striped">
+ <tr>
+     <th>userGiftId</th>
+     <th>giftCardAmount </th>
+     <th>giftCardIssueDate</th>
+     <th>reloadable</th>
+     <th>recipientsName </th>
+     <th>recipientsMobileNumber</th>
+     <th>recipientsEmail</th>
+     <th>recipientsEmail</th>
+     <th>scheduledelivary</th>
+
+     <tr *ngFor = "let giftcard of giftcards">
+         <td> {{ giftcard.id}}</td>
+         <td> {{ giftCard.amount}}</td>
+         <td> {{ giftCard.issuedate}}</td>
+         <td> {{ giftCard.reloadable}}</td>
+         <td> {{ giftCard.recipientsName}}</td>
+         <td> {{ giftCard.recipientsMobileNumber}}</td>
+         <td> {{ giftCard.recipientsEmail}}</td>
+         <td> {{ giftCard.recipientsEmail}}</td>
+         <td> {{ giftCard.scheduledelivary}}</td>
+
+
+     </tr>
+ </tr>
+ </table>
+
+</div>

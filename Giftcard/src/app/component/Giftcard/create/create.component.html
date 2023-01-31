@@ -1,0 +1,56 @@
+<p>create works!</p>
+<h3>Create Giftcard</h3>
+<div class="container">
+    <div class="alert alert-success" *ngIf="msg !=undefined"> {{msg}}</div>
+    <div class="alert alert-danger" *ngIf="errorMsg != undefined">{{errorMsg}}</div>
+    
+    <form #frm="ngForm" (ngSubmit)="addAccount()">
+
+    <div>userGiftId </div>
+    <div>userGiftId<input type="text" name="userGiftId " [(ngModel)]="newGiftcard.userGiftId " required #userGiftId="ngModel" class="form-control"/></div>
+    <div class="alert alert-danger" *ngIf="userGiftId.invalid && userGiftId.touched"> request Id is required</div>
+
+    <div>giftcardamount </div>
+    <div>userGiftId<input type="text" name="giftcardamount " [(ngModel)]="newGiftcard.giftcardamount" required #userGiftId="ngModel" class="form-control"/></div>
+    <div class="alert alert-danger" *ngIf="userGiftId.invalid && userGiftId.touched"> request Id is required</div>
+    
+    
+    <div>giftCardIssueDate</div>
+    
+    
+    
+    
+    <div> reloadable</div>
+    
+    
+    
+    
+    <div> recipientsName</div>
+    
+    
+    
+    div> recipientsMobileNumber /div>
+ 
+  
+
+    div> recipientsEmail </div>
+  
+    
+
+
+    div>delivaryType</div>
+   
+
+
+    
+    div> scheduledelivary/div>
+    
+
+
+
+</form>
+    
+    
+    
+    
+    </div>
